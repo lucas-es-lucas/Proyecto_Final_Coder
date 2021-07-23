@@ -13,7 +13,7 @@
 
 body {
   background-color: black;
-  font-family: "Roboto", sans-serif;
+  font-family: "Rajdhani", sans-serif;
   font-size: 1rem;
   color: white; }
   body ul {
@@ -28,6 +28,10 @@ body {
     body .container .container__titulo {
       margin-top: 2rem;
       margin-bottom: 2rem;
+      background-color: #c80000;
+      color: black;
+      font-family: "Tourney", cursive;
+      font-style: oblique;
       font-size: 2rem;
       text-align: center; }
 
@@ -49,6 +53,7 @@ body {
     padding-right: .4rem; }
   .menu__paginas__link {
     font-size: 1.2rem;
+    font-weight: 600;
     color: #c80000;
     transition: all .5s ease; }
     .menu__paginas__link:hover {
@@ -102,6 +107,8 @@ body {
   .album__cancion:hover {
     background-color: #c80000; }
   .album__cancion__link {
+    font-size: 1.1rem;
+    text-align: left;
     padding: 1rem;
     display: block; }
     .album__cancion__link:hover {
@@ -148,8 +155,7 @@ body {
     bottom: 5%; }
   .portada__slide__link {
     font-size: x-large;
-    font-stretch: extra-expanded;
-    font-weight: bold; }
+    font-stretch: extra-expanded; }
   .portada__slide__link:hover {
     color: #c8c8c8; }
   .portada__section {
@@ -169,6 +175,9 @@ body {
     text-align: center; }
   .portada__info__detalles {
     font-size: 1rem;
+    text-align: center; }
+  .portada__info__verTodos {
+    font-size: 1.2rem;
     text-align: center; }
   .portada__info__canciones {
     display: flex;

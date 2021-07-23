@@ -23,6 +23,7 @@
           }
           &__link {
                font-size: $fuente-tamano * 1.2;
+               font-weight: 600;
                color: $color-link;
                transition: all .5s ease;
                &:hover {

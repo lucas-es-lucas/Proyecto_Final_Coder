@@ -27,6 +27,10 @@ body {
           .container__titulo {
                margin-top: 2rem;
                margin-bottom: 2rem;
+               background-color: $color-link;
+               color: $color-fondo;
+               font-family: $fuente-titulos;
+               font-style: oblique;
                font-size: $fuente-tamano * 2;
                text-align: center;
           }
