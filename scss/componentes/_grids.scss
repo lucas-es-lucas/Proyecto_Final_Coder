@@ -50,13 +50,19 @@
 // MUSIC
 .galeria {
      // background-color: rgb(200, 0, 40);
-     @include grillas__simetricas(2, auto, 5, auto, 2vw, 2vw);    
+     // @include grillas__simetricas(2, auto, 5, auto, 2vw, 2vw);
+     @include grillas__simetricas(1, auto, 10, auto, 2vw, 2vw);
      grid-template-areas: 
-     "album1 album2"
-     "album3 album4"
-     "album5 album6"
-     "album7 album8"
-     "album9 album10";
+     "album1"
+     "album2"
+     "album3"
+     "album4"
+     "album5"
+     "album6"
+     "album7"
+     "album8"
+     "album9"
+     "album10";
      .album__Kill {
           grid-area: album1;
      }
