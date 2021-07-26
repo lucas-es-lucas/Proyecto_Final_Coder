@@ -3,6 +3,7 @@
 Sitio web desarrollado como Proyecto Final del Curso de Desarrollo Web de CoderHouse 
 
 https://youthful-hopper-8b6d33.netlify.app/
+
 https://metallicanooficial.000webhostapp.com/
 
 Repositorio: 
@@ -15,6 +16,3 @@ SASS
 BEM
 SEO
 GIT
-
----------------------------------
-https://github.com/lucas-es-lucas
