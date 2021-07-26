@@ -35,11 +35,28 @@ body {
       font-size: 2rem;
       text-align: center; }
 
-.error404 {
-  margin: 0 auto;
-  align-items: center; }
-  .error404__imagen {
-    width: 100%; }
+.error404__titulo {
+  position: relative;
+  top: 25vh;
+  text-align: center;
+  color: #c80000; }
+
+.error404__mensaje {
+  position: relative;
+  top: 30vh;
+  text-align: center;
+  color: white; }
+
+.error404__link {
+  position: relative;
+  top: 35vh;
+  transition: all 2s ease; }
+  .error404__link :hover {
+    color: white;
+    transform: scale(1.2, 1.2); }
+  .error404__link h2 {
+    text-align: center;
+    color: #c80000; }
 
 .menu {
   background-color: black; }
@@ -224,8 +241,8 @@ body {
   display: grid;
   grid-template-columns: repeat(1, auto);
   grid-template-rows: repeat(10, auto);
-  column-gap: 2vw;
-  row-gap: 2vw;
+  column-gap: 3vw;
+  row-gap: 3vw;
   justify-content: center;
   grid-template-areas: "album1" "album2" "album3" "album4" "album5" "album6" "album7" "album8" "album9" "album10"; }
   .galeria .album__Kill {
@@ -292,7 +309,7 @@ body {
     .portada__info__subtitulo {
       font-size: 1.7rem; } }
 
-@media only screen and (min-width: 576px) and (max-width: 767px) {
+@media only screen and (min-width: 768px) and (max-width: 991px) {
   .galeria {
     display: grid;
     grid-template-columns: repeat(2, auto);
@@ -302,7 +319,7 @@ body {
     justify-content: center;
     grid-template-areas: "album1 album2" "album3 album4" "album5 album6" "album7 album8" "album9 album10"; } }
 
-@media only screen and (min-width: 768px) and (max-width: 1199px) {
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
   .galeria {
     display: grid;
     grid-template-columns: repeat(3, auto);
