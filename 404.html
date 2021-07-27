@@ -20,10 +20,60 @@
      <link rel="preconnect" href="https://fonts.googleapis.com"> 
      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
      <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+     <!-- Títulos -->
+     <link rel="preconnect" href="https://fonts.googleapis.com"> 
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Tourney:ital@0;1&display=swap" rel="stylesheet">
      <title>WTF</title>
+     <style>
+          .container {
+               margin: 2rem auto;
+          }
+          .container__titulo {
+               margin-top: 2rem;
+               margin-bottom: 2rem;
+               background-color: rgb(200, 0, 0); 
+               color: rgb(0, 0, 0);
+               font-family: 'Tourney', cursive;
+               font-style: oblique;
+               font-size: 2rem;
+               text-align: center;
+               }
+          .error404__titulo {
+               position: relative;
+               top: 25vh;
+               background-color: rgb(200, 0, 0); 
+               color: rgb(0, 0, 0);
+               font-family: 'Tourney', cursive;
+               font-style: oblique;
+               font-size: 2rem;
+               text-align: center;
+          }
+          .error404_mensaje {
+               position: relative;
+               top: 30vh;
+               text-align: center;
+               color: rgb(255, 255, 255);
+          }
+          .error404__link {
+               position: relative;
+               top: 35vh;
+               transition: all .5s ease;
+          }
+          .error404__link:hover {
+               color: rgb(255, 255, 255);
+               transform: translateY(5px);
+               /* transform: scale(1.2, 1.2); */
+          }
+          .error404__link h2 {
+               color: rgb(200, 0, 0);
+               font-size: 2rem;
+               text-align: center;
+          }
+     </style>
 </head>
 <body>
-     <main class="container error404">
+     <main class="container">
           <h1 class="error404__titulo">WTF?!</h1>
           <h2 class="error404__mensaje">Parece que la página que buscás no está disponible...</h2>
           <a class="error404__link" href="../index.html"><h2>VOLVER AL INICIO</h2></a>
