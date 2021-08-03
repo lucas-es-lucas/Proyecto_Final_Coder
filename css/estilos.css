@@ -5,6 +5,100 @@
   .boton:hover {
     background-color: white;
     color: #c80000; }
+  .boton:focus {
+    box-shadow: none; }
+
+.catalogo {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  grid-template-rows: repeat(6, auto);
+  column-gap: 2vw;
+  row-gap: 2vw;
+  justify-content: center;
+  grid-template-areas: "producto1 producto2" "producto3 producto4" "producto5 producto6" "producto7 producto8" "producto9 producto10" "producto11 producto12"; }
+  .catalogo .producto__killLentes {
+    grid-area: producto1; }
+  .catalogo .producto__loadBarbijo {
+    grid-area: producto2; }
+  .catalogo .producto__rideRemera {
+    grid-area: producto3; }
+  .catalogo .producto__masterRemera {
+    grid-area: producto4; }
+  .catalogo .producto__justiceRemera {
+    grid-area: producto5; }
+  .catalogo .producto__kilRemera {
+    grid-area: producto6; }
+  .catalogo .producto__blackAlbum {
+    grid-area: producto7; }
+  .catalogo .producto__blackAlbum3CD {
+    grid-area: producto8; }
+  .catalogo .producto__blackAlbumDeluxe {
+    grid-area: producto9; }
+  .catalogo .producto__blackCassette {
+    grid-area: producto10; }
+  .catalogo .producto__blackCuaderno {
+    grid-area: producto11; }
+  .catalogo .producto__blackReloj {
+    grid-area: producto12; }
+
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(1, auto);
+  grid-template-rows: repeat(10, auto);
+  column-gap: 3vw;
+  row-gap: 3vw;
+  justify-content: center;
+  grid-template-areas: "album1" "album2" "album3" "album4" "album5" "album6" "album7" "album8" "album9" "album10"; }
+  .galeria .album__Kill {
+    grid-area: album1; }
+  .galeria .album__Ride {
+    grid-area: album2; }
+  .galeria .album__Master {
+    grid-area: album3; }
+  .galeria .album__Justice {
+    grid-area: album4; }
+  .galeria .album__Black {
+    grid-area: album5; }
+  .galeria .album__Load {
+    grid-area: album6; }
+  .galeria .album__Reload {
+    grid-area: album7; }
+  .galeria .album__Anger {
+    grid-area: album8; }
+  .galeria .album__Death {
+    grid-area: album9; }
+  .galeria .album__Hardwired {
+    grid-area: album10; }
+
+.tour {
+  display: grid;
+  grid-template-columns: repeat(1, auto);
+  grid-template-rows: repeat(3, auto);
+  column-gap: 0vw;
+  row-gap: 2vw;
+  justify-content: center;
+  grid-template-areas: "mes01" "mes02" "mes03"; }
+  .tour .tour__mes__01 {
+    grid-area: mes01; }
+  .tour .tour__mes__02 {
+    grid-area: mes02; }
+  .tour .tour__mes__03 {
+    grid-area: mes03; }
+
+.accordion .accordion-item .accordion-button:focus {
+  border-color: none;
+  box-shadow: none; }
+
+.accordion .accordion-item .accordion-button:not(.collapsed)::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%230c63e4'%3e%3cpath stroke='rgba(200, 0, 0, 1)' fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+  transform: rotate(-180deg); }
+
+.accordion .accordion-item .accordion-button:not(.collapsed) {
+  color: #c80000;
+  font-weight: bold; }
+  .accordion .accordion-item .accordion-button:not(.collapsed):hover {
+    background-color: white;
+    color: #c80000; }
 
 * {
   margin: 0;
@@ -34,6 +128,10 @@ body {
       font-style: oblique;
       font-size: 2rem;
       text-align: center; }
+  body .div__ejemplo__cover {
+    background-color: turquoise; }
+  body .div__ejemplo__canciones {
+    background-color: violet; }
 
 .error404__titulo {
   position: relative;
@@ -66,6 +164,8 @@ body {
     color: #c80000; }
     .menu__burger .navbar-toggler-icon {
       background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(200, 0, 0, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E"); }
+    .menu__burger:focus {
+      box-shadow: none; }
   .menu__paginas .nav-item {
     padding-left: .4rem;
     padding-right: .4rem; }
@@ -77,6 +177,8 @@ body {
     .menu__paginas__link:hover {
       color: white;
       transform: translateY(5px); }
+    .menu__paginas__link:focus {
+      color: gray; }
   .menu__paginas__link--activo {
     color: gray; }
   .menu__redes .nav-item {
@@ -105,6 +207,9 @@ body {
       padding-right: 1.5rem;
       font-size: 2rem; }
 
+.album__portada {
+  margin: 1rem 1rem; }
+
 .album__cover {
   width: 100%;
   opacity: .7;
@@ -113,17 +218,34 @@ body {
     opacity: 1;
     transform: scale(1.1, 1.1); }
 
-.album__titulo {
-  color: white; }
-
-.album__fondo {
+.album .card {
   background-color: #333333; }
+
+.album .card-body {
+  flex: 0 0 auto;
+  justify-items: center;
+  text-align: center; }
+
+.album__imagen {
+  width: 90%;
+  margin: 1rem 1rem; }
+
+.album__titulo, .album__info {
+  color: white; }
 
 .album__cancion {
   background-color: black;
   padding: 0; }
   .album__cancion:hover {
     background-color: #c80000; }
+  .album__cancion__titulo {
+    font-size: 1.1rem;
+    text-align: left;
+    background: black;
+    color: #c80000; }
+    .album__cancion__titulo:hover {
+      background-color: #c80000;
+      color: white; }
   .album__cancion__link {
     font-size: 1.1rem;
     text-align: left;
@@ -131,6 +253,9 @@ body {
     display: block; }
     .album__cancion__link:hover {
       background-color: #c80000; }
+  .album__cancion__letra {
+    font-size: 0.9rem;
+    text-align: left; }
 
 .producto {
   margin: .2rem; }
@@ -205,83 +330,6 @@ body {
     .portada__info__canciones ul {
       padding: 0; }
 
-.catalogo {
-  display: grid;
-  grid-template-columns: repeat(2, 50%);
-  grid-template-rows: repeat(6, auto);
-  column-gap: 2vw;
-  row-gap: 2vw;
-  justify-content: center;
-  grid-template-areas: "producto1 producto2" "producto3 producto4" "producto5 producto6" "producto7 producto8" "producto9 producto10" "producto11 producto12"; }
-  .catalogo .producto__killLentes {
-    grid-area: producto1; }
-  .catalogo .producto__loadBarbijo {
-    grid-area: producto2; }
-  .catalogo .producto__rideRemera {
-    grid-area: producto3; }
-  .catalogo .producto__masterRemera {
-    grid-area: producto4; }
-  .catalogo .producto__justiceRemera {
-    grid-area: producto5; }
-  .catalogo .producto__kilRemera {
-    grid-area: producto6; }
-  .catalogo .producto__blackAlbum {
-    grid-area: producto7; }
-  .catalogo .producto__blackAlbum3CD {
-    grid-area: producto8; }
-  .catalogo .producto__blackAlbumDeluxe {
-    grid-area: producto9; }
-  .catalogo .producto__blackCassette {
-    grid-area: producto10; }
-  .catalogo .producto__blackCuaderno {
-    grid-area: producto11; }
-  .catalogo .producto__blackReloj {
-    grid-area: producto12; }
-
-.galeria {
-  display: grid;
-  grid-template-columns: repeat(1, auto);
-  grid-template-rows: repeat(10, auto);
-  column-gap: 3vw;
-  row-gap: 3vw;
-  justify-content: center;
-  grid-template-areas: "album1" "album2" "album3" "album4" "album5" "album6" "album7" "album8" "album9" "album10"; }
-  .galeria .album__Kill {
-    grid-area: album1; }
-  .galeria .album__Ride {
-    grid-area: album2; }
-  .galeria .album__Master {
-    grid-area: album3; }
-  .galeria .album__Justice {
-    grid-area: album4; }
-  .galeria .album__Black {
-    grid-area: album5; }
-  .galeria .album__Load {
-    grid-area: album6; }
-  .galeria .album__Reload {
-    grid-area: album7; }
-  .galeria .album__Anger {
-    grid-area: album8; }
-  .galeria .album__Death {
-    grid-area: album9; }
-  .galeria .album__Hardwire {
-    grid-area: album10; }
-
-.tour {
-  display: grid;
-  grid-template-columns: repeat(1, auto);
-  grid-template-rows: repeat(3, auto);
-  column-gap: 0vw;
-  row-gap: 2vw;
-  justify-content: center;
-  grid-template-areas: "mes01" "mes02" "mes03"; }
-  .tour .tour__mes__01 {
-    grid-area: mes01; }
-  .tour .tour__mes__02 {
-    grid-area: mes02; }
-  .tour .tour__mes__03 {
-    grid-area: mes03; }
-
 @media only screen and (min-width: 768px) and (max-width: 1199px) {
   .portada__section {
     padding: 1rem;
@@ -339,6 +387,24 @@ body {
     row-gap: 3vw;
     justify-content: center;
     grid-template-areas: "album1  album2  album3  album4" "album5  album6  album7  album8" ".       album9  album10 ."; } }
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .album__portada, .album__tapa {
+    width: 100%;
+    margin: auto; }
+  .album__cancion__letra {
+    font-size: 0.6rem;
+    text-align: left; } }
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .album__cancion__letra {
+    font-size: 0.58rem;
+    text-align: left; } }
+
+@media only screen and (min-width: 1200px) {
+  .album__cancion__letra {
+    font-size: 0.7rem;
+    text-align: left; } }
 
 @media only screen and (min-width: 768px) and (max-width: 1199px) {
   .catalogo {

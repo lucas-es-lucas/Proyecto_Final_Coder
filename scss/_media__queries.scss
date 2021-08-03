@@ -87,6 +87,44 @@
 
 }
 
+//CANCIONES
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+     .album {
+          &__portada, &__tapa {
+               width: 100%;
+               margin: auto;
+          }
+          &__cancion {
+               &__letra {
+                    @include textos(($fuente-tamano * .6), left)
+               }
+          }
+     }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+
+     .album {
+          &__cancion {
+               &__letra {
+                    @include textos(($fuente-tamano * .58), left)
+               }
+          }
+     }
+}
+
+@media only screen and (min-width: 1200px) {
+
+     .album {
+          &__cancion {
+               &__letra {
+                    @include textos(($fuente-tamano * .7), left)
+               }
+          }
+     }
+}
+
 //TIENDA 
 @media only screen and (min-width: 768px) and (max-width: 1199px) {
 

@@ -1,7 +1,10 @@
 @import "variables";
 @import "mixins";
 @import "componentes/boton";
+@import "componentes/grids";
+@import "componentes/accordion";
 @import "general";
+@import "clases__propias/volver";
 @import "clases__propias/404";
 @import "clases__propias/menu";
 @import "clases__propias/compra";
@@ -9,5 +12,5 @@
 @import "clases__propias/producto";
 @import "clases__propias/tour";
 @import "clases__propias/portada";
-@import "componentes/grids";
+// @import "componentes/grids";
 @import "media__queries";

@@ -1,6 +1,8 @@
 // album
-// album__cover
 // album__imagen
+// album__portada
+// album__tapa
+// album__cover
 // album__fondo
 // album__titulo
 // album__info
@@ -9,6 +11,11 @@
 // album__cancion__link
 
 .album {
+     // index
+     &__portada {
+          margin: 1rem 1rem;
+     }
+     // galería
      &__cover {
           width: 100%;
           opacity: .7;
@@ -18,17 +25,36 @@
                transform: scale(1.1, 1.1);
           }
      }
-     &__titulo {
-          color: $color-texto;
-     }
-     &__fondo {
+     // canciones
+     .card {
           background-color: lighten($color: $color-fondo, $amount: 20);
+     }
+     .card-body {
+          flex: 0 0 auto;
+          justify-items: center;
+          text-align: center;
+     }
+     &__imagen {
+          width: 90%;
+          margin: 1rem 1rem;
+     }
+     &__titulo, &__info {
+          color: $color-texto;
      }
      &__cancion {
           background-color: $color-fondo;
           padding: 0;
           &:hover {
                background-color: $color-link;
+          }
+          &__titulo {
+               @include textos(($fuente-tamano * 1.1), left);
+               background: $color-fondo;
+               color: $color-link;
+               &:hover {
+                    background-color: $color-link;
+                    color: $color-texto;
+               }
           }
           &__link {
                @include textos(($fuente-tamano * 1.1), left);
@@ -37,6 +63,9 @@
                &:hover {
                     background-color: $color-link;
                }
+          }
+          &__letra {
+               @include textos(($fuente-tamano * .9), left)
           }
      }
 }
