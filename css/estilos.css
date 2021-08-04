@@ -133,6 +133,19 @@ body {
   body .div__ejemplo__canciones {
     background-color: violet; }
 
+.volver {
+  text-align: center; }
+  .volver__boton {
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: #c80000;
+    transition: all .5s ease; }
+    .volver__boton:hover {
+      color: white;
+      transform: translateY(5px); }
+    .volver__boton:focus {
+      color: #c80000; }
+
 .error404__titulo {
   position: relative;
   top: 25vh;
@@ -170,7 +183,7 @@ body {
     padding-left: .4rem;
     padding-right: .4rem; }
   .menu__paginas__link {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     font-weight: 600;
     color: #c80000;
     transition: all .5s ease; }
@@ -218,8 +231,11 @@ body {
     opacity: 1;
     transform: scale(1.1, 1.1); }
 
+.album__tapa {
+  width: 30vw; }
+
 .album .card {
-  background-color: #333333; }
+  background-color: #1a1a1a; }
 
 .album .card-body {
   flex: 0 0 auto;
@@ -227,8 +243,9 @@ body {
   text-align: center; }
 
 .album__imagen {
-  width: 90%;
-  margin: 1rem 1rem; }
+  width: 50vw;
+  margin: 2rem 1rem 1rem 1rem;
+  align-self: center; }
 
 .album__titulo, .album__info {
   color: white; }
@@ -255,7 +272,8 @@ body {
       background-color: #c80000; }
   .album__cancion__letra {
     font-size: 0.9rem;
-    text-align: left; }
+    text-align: left;
+    padding: .5rem; }
 
 .producto {
   margin: .2rem; }
@@ -282,7 +300,7 @@ body {
   padding: .5rem;
   transition: all 1s ease; }
   .tour__mes .tour__mes__fecha:hover {
-    transform: translate(-40px);
+    transform: translate(30px);
     background-color: #262626; }
   .tour__mes .tour__mes__fecha .tour__mes__fecha__link {
     font-size: 1.2rem; }
@@ -310,25 +328,27 @@ body {
     align-items: center; }
     .portada__section__video {
       justify-content: center; }
-  .portada__info__titulo {
-    font-size: 2rem;
-    text-align: center; }
-  .portada__info__subtitulo {
-    font-size: 1.5rem;
-    text-align: center; }
-  .portada__info__detalles {
-    font-size: 1rem;
-    text-align: center; }
-  .portada__info__verTodos {
-    font-size: 1.2rem;
-    text-align: center; }
-  .portada__info__canciones {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center; }
-    .portada__info__canciones ul {
-      padding: 0; }
+  .portada__info {
+    padding: 1rem; }
+    .portada__info__titulo {
+      font-size: 2rem;
+      text-align: center; }
+    .portada__info__subtitulo {
+      font-size: 1.5rem;
+      text-align: center; }
+    .portada__info__detalles {
+      font-size: 1rem;
+      text-align: center; }
+    .portada__info__verTodos {
+      font-size: 1.2rem;
+      text-align: center; }
+    .portada__info__canciones {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center; }
+      .portada__info__canciones ul {
+        padding: 0; }
 
 @media only screen and (min-width: 768px) and (max-width: 1199px) {
   .portada__section {
@@ -338,7 +358,7 @@ body {
     flex-wrap: wrap;
     align-items: center; }
   .portada__info {
-    padding: .5rem; }
+    padding: 1.5rem; }
     .portada__info__titulo {
       font-size: 1.5rem; }
     .portada__info__subtitulo {
@@ -352,7 +372,7 @@ body {
     flex-wrap: wrap;
     align-items: center; }
   .portada__info {
-    padding: .5rem; }
+    padding: 2rem; }
     .portada__info__titulo {
       font-size: 2.5rem; }
     .portada__info__subtitulo {
@@ -388,22 +408,35 @@ body {
     justify-content: center;
     grid-template-areas: "album1  album2  album3  album4" "album5  album6  album7  album8" ".       album9  album10 ."; } }
 
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .album__imagen {
+    width: 40vw; } }
+
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-  .album__portada, .album__tapa {
-    width: 100%;
+  .album__imagen {
+    width: 30vw; }
+  .album__tapa {
+    width: 20vw;
     margin: auto; }
   .album__cancion__letra {
-    font-size: 0.6rem;
+    font-size: 0.75rem;
     text-align: left; } }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
-  .album__cancion__letra {
-    font-size: 0.58rem;
-    text-align: left; } }
+  .album__imagen {
+    width: 20vw; }
+  .album__tapa {
+    width: 20vw;
+    margin: auto; } }
 
 @media only screen and (min-width: 1200px) {
+  .album__imagen {
+    width: 15vw; }
+  .album__tapa {
+    width: 15vw;
+    margin: auto; }
   .album__cancion__letra {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     text-align: left; } }
 
 @media only screen and (min-width: 768px) and (max-width: 1199px) {
@@ -462,6 +495,8 @@ body {
       grid-area: fecha07; } }
 
 @media only screen and (min-width: 1200px) {
+  .tour .tour__mes__fecha:hover {
+    transform: translate(-40px); }
   .tour .tour__mes__fecha__ciudad {
     font-size: 1.5rem; }
   .tour .tour__mes__01 {

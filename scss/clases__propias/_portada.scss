@@ -42,6 +42,7 @@
           }
      }
      &__info {
+          padding: 1rem;
           &__titulo {
                @include textos(($fuente-tamano * 2), center);
           }

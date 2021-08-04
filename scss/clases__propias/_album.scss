@@ -25,9 +25,13 @@
                transform: scale(1.1, 1.1);
           }
      }
+     // discos individuales
+     &__tapa {
+          width: 30vw;
+     }
      // canciones
      .card {
-          background-color: lighten($color: $color-fondo, $amount: 20);
+          background-color: lighten($color: $color-fondo, $amount: 10);
      }
      .card-body {
           flex: 0 0 auto;
@@ -35,8 +39,9 @@
           text-align: center;
      }
      &__imagen {
-          width: 90%;
-          margin: 1rem 1rem;
+          width: 50vw;
+          margin: 2rem 1rem 1rem 1rem;
+          align-self: center;
      }
      &__titulo, &__info {
           color: $color-texto;
@@ -56,6 +61,7 @@
                     color: $color-texto;
                }
           }
+          // NO SE USA HASTA AGREGAR EL LINK / REEMPLAZADO CON LA CLASE &__titulo
           &__link {
                @include textos(($fuente-tamano * 1.1), left);
                padding: 1rem;
@@ -65,7 +71,8 @@
                }
           }
           &__letra {
-               @include textos(($fuente-tamano * .9), left)
+               @include textos(($fuente-tamano * .9), left);
+               padding: .5rem;
           }
      }
 }

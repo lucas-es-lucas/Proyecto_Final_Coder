@@ -13,7 +13,7 @@
           padding: .5rem;
           transition: all 1s ease;
           &:hover {
-               transform: translate(-40px);
+               transform: translate(30px);
                background-color: lighten($color-fondo, $amount: 15);
           }
           .tour__mes__fecha__link {

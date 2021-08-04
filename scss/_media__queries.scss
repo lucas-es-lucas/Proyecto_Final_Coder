@@ -11,7 +11,7 @@
           align-items: center;
      }
      .portada__info {
-          padding: .5rem;
+          padding: 1.5rem;
           &__titulo {
                font-size: ($fuente-tamano * 1.5);
           }
@@ -33,7 +33,7 @@
           align-items: center;
      }
      .portada__info {
-          padding: .5rem;
+          padding: 2rem;
           &__titulo {
                font-size: ($fuente-tamano * 2.5);
           }
@@ -88,16 +88,28 @@
 }
 
 //CANCIONES
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+
+     .album {
+          &__imagen {
+               width: 40vw;
+          }
+     }
+}
+
 @media only screen and (min-width: 768px) and (max-width: 991px) {
 
      .album {
-          &__portada, &__tapa {
-               width: 100%;
+          &__imagen {
+               width: 30vw;
+          }
+          &__tapa {
+               width: 20vw;
                margin: auto;
           }
           &__cancion {
                &__letra {
-                    @include textos(($fuente-tamano * .6), left)
+                    @include textos(($fuente-tamano * .75), left);
                }
           }
      }
@@ -106,10 +118,12 @@
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
 
      .album {
-          &__cancion {
-               &__letra {
-                    @include textos(($fuente-tamano * .58), left)
-               }
+          &__imagen {
+               width: 20vw;
+          }
+          &__tapa {
+               width: 20vw;
+               margin: auto;
           }
      }
 }
@@ -117,9 +131,16 @@
 @media only screen and (min-width: 1200px) {
 
      .album {
+          &__imagen {
+               width: 15vw;
+          }
+          &__tapa {
+               width: 15vw;
+               margin: auto;
+          }
           &__cancion {
                &__letra {
-                    @include textos(($fuente-tamano * .7), left)
+                    @include textos(($fuente-tamano * .8), left)
                }
           }
      }
@@ -232,6 +253,11 @@
 @media only screen and (min-width: 1200px) {
 
      .tour {
+          .tour__mes__fecha {
+               &:hover {
+                    transform: translate(-40px);
+               }
+          }
           // background-color: blue;
           .tour__mes__fecha__ciudad {
                font-size: ($fuente-tamano * 1.5);
