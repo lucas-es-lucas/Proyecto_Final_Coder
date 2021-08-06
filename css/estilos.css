@@ -424,20 +424,24 @@ body {
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .album__imagen {
+    width: 25vw; }
+  .album__tapa {
+    width: 20vw;
+    margin: auto; } }
+
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  .album__imagen {
     width: 20vw; }
   .album__tapa {
     width: 20vw;
     margin: auto; } }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1400px) {
   .album__imagen {
-    width: 15vw; }
+    width: 20vw; }
   .album__tapa {
-    width: 15vw;
-    margin: auto; }
-  .album__cancion__letra {
-    font-size: 0.8rem;
-    text-align: left; } }
+    width: 20vw;
+    margin: auto; } }
 
 @media only screen and (min-width: 768px) and (max-width: 1199px) {
   .catalogo {

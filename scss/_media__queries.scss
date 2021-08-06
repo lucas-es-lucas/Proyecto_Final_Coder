@@ -119,6 +119,19 @@
 
      .album {
           &__imagen {
+               width: 25vw;
+          }
+          &__tapa {
+               width: 20vw;
+               margin: auto;
+          }
+     }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+
+     .album {
+          &__imagen {
                width: 20vw;
           }
           &__tapa {
@@ -128,20 +141,15 @@
      }
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1400px) {
 
      .album {
           &__imagen {
-               width: 15vw;
+               width: 20vw;
           }
           &__tapa {
-               width: 15vw;
+               width: 20vw;
                margin: auto;
-          }
-          &__cancion {
-               &__letra {
-                    @include textos(($fuente-tamano * .8), left)
-               }
           }
      }
 }
