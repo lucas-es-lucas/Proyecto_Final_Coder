@@ -65,6 +65,7 @@
      </header>
      <main class="container">
           <section class="row album album__Hardwired">
+               <!-- col-12 col-md-4 col-lg-3 -->
                <div class="col-10 offset-1 col-md-4 offset-md-1 col-xl-3 offset-xl-2 card-body">
                     <img class="album__tapa coverHardwired" src="/images/album_covers/album_cover_Hardwired.jpeg" alt="coverHardwired"> 
                     <hr>
@@ -72,17 +73,19 @@
                     <p class="card-text album__info">2016</p>
                     <a href="https://open.spotify.com/album/4bcUiX49wpmDRhrC8TvDWV?si=NW5T7aQaTAyFkVe0Lg2qTw&dl_branch=1" target="_blank" class="btn btn-danger boton album__link">Escuchá el Album</a>
                </div>
-               <!-- accordionHardwired -->
-               <div class="accordion col-10 offset-1 col-md-6 offset-md-0 col-xl-5 offset-xl-1 col-xxl-4 offset-xxl-1 albumListaCanciones" id="accordionHardwired">
-                    <div class="accordion-item album__cancion cancionHardwired01">
-                         <h2 class="accordion-header" id="headingHardwired01">
-                         <button class="accordion-button album__cancion__titulo collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseHardwired01" aria-expanded="false" aria-controls="collapseHardwired01">
-                              Hardwired
-                         </button>
-                         </h2>
-                         <div id="collapseHardwired01" class="accordion-collapse collapse" aria-labelledby="headingHardwired01" data-bs-parent="#accordionHardwired">
-                              <div class="accordion-body album__cancion__letra">
-                                   <pre>
+               <!-- col-12 col-md-8 col-lg-9 -->
+                    <!-- accordion -->
+                    <div class="accordion col-10 offset-1 col-md-6 offset-md-0 col-xl-5 offset-xl-1 col-xxl-4 offset-xxl-1 albumListaCanciones" id="accordionHardwired">
+                         <div class="accordion-item album__cancion">
+                              <h2 class="accordion-header" id="headingOne">
+                              <button class="accordion-button album__cancion__titulo collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                   Hardwired
+                              </button>
+                              <!-- <a href="https://open.spotify.com/album/4bcUiX49wpmDRhrC8TvDWV?si=NW5T7aQaTAyFkVe0Lg2qTw&dl_branch=1" target="_blank" class="btn btn-danger boton album__cancion__link">Play Canción</a> -->
+                              </h2>
+                              <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionHardwired">
+                                   <div class="accordion-body album__cancion__letra">
+                                        <pre>
 ln the name of desperation
 ln the name of wretched pain
 ln the name of all creation
@@ -119,19 +122,19 @@ Hardwired to self-destruct
 Self-destruct
 Self-destruct
 Self-destruct
-                                   </pre>
+                                        </pre>
+                                   </div>
                               </div>
                          </div>
-                    </div>
-                    <div class="accordion-item album__cancion cancionHardwired02">
-                         <h2 class="accordion-header" id="headingHardwired02">
-                         <button class="accordion-button album__cancion__titulo collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseHardwired02" aria-expanded="false" aria-controls="collapseHardwired02">
-                              Atlas, Rise!
-                         </button>
-                         </h2>
-                         <div id="collapseHardwired02" class="accordion-collapse collapse" aria-labelledby="headingHardwired02" data-bs-parent="#accordionHardwired">
-                              <div class="accordion-body album__cancion__letra">
-                                   <pre>
+                         <div class="accordion-item album__cancion">
+                              <h2 class="accordion-header" id="headingTwo">
+                              <button class="accordion-button album__cancion__titulo collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                   Atlas, Rise!
+                              </button>
+                              </h2>
+                              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionHardwired">
+                                   <div class="accordion-body album__cancion__letra">
+                                        <pre>
 Bitterness and burden
 Curses rest on thee
 Solitaire and sorrow
@@ -208,19 +211,19 @@ Bound by the world all alone
 Crushed under heavy skies
 Crushed under heavy skies
 Atlas, Rise!
-                                   </pre>
+                                        </pre>
+                                   </div>
                               </div>
                          </div>
-                    </div>
-                    <div class="accordion-item album__cancion cancionHardwired03">
-                         <h2 class="accordion-header" id="headingHardwired03">
-                         <button class="accordion-button album__cancion__titulo collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseHardwired03" aria-expanded="false" aria-controls="collapseHardwired03">
-                              Now That We're Dead
-                         </button>
-                         </h2>
-                         <div id="collapseHardwired03" class="accordion-collapse collapse" aria-labelledby="headingHardwired03" data-bs-parent="#accordionHardwired">
-                              <div class="accordion-body album__cancion__letra">
-                                   <pre>
+                         <div class="accordion-item album__cancion">
+                              <h2 class="accordion-header" id="headingThree">
+                              <button class="accordion-button album__cancion__titulo collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                   Now That We're Dead
+                              </button>
+                              </h2>
+                              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionHardwired">
+                                   <div class="accordion-body album__cancion__letra">
+                                        <pre>
 When darkness falls
 May it be
 That we should see the light
@@ -286,19 +289,19 @@ We can live, we can live forever
 Return to ashes, shed this skin
 Beyond the black, we rise again
 We shall live forever
-                                   </pre>
+                                        </pre>
+                                   </div>
                               </div>
                          </div>
-                    </div>
-                    <div class="accordion-item album__cancion cancionHardwired04">
-                         <h2 class="accordion-header" id="headingHardwired04">
-                         <button class="accordion-button album__cancion__titulo collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseHardwired04" aria-expanded="false" aria-controls="collapseHardwired04">
-                              Mouth Into Flame
-                         </button>
-                         </h2>
-                         <div id="collapseHardwired04" class="accordion-collapse collapse" aria-labelledby="headingHardwired04" data-bs-parent="#accordionHardwired">
-                              <div class="accordion-body album__cancion__letra">
-                                   <pre>
+                         <div class="accordion-item album__cancion">
+                              <h2 class="accordion-header" id="headingFour">
+                              <button class="accordion-button album__cancion__titulo collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                   Mouth Into Flame
+                              </button>
+                              </h2>
+                              <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionHardwired">
+                                   <div class="accordion-body album__cancion__letra">
+                                        <pre>
 Blacked out
 Pop queen, amphetamine
 The screams crashed into silence
@@ -393,19 +396,19 @@ A moth into the flame
 
 Addicted to the
 Fame
-                                   </pre>
+                                        </pre>
+                                   </div>
                               </div>
                          </div>
-                    </div>
-                    <div class="accordion-item album__cancion cancionHardwired05">
-                         <h2 class="accordion-header" id="headingHardwired05">
-                         <button class="accordion-button album__cancion__titulo collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseHardwired05" aria-expanded="false" aria-controls="collapseHardwired05">
-                              Dream No More
-                         </button>
-                         </h2>
-                         <div id="collapseHardwired05" class="accordion-collapse collapse" aria-labelledby="headingHardwired05" data-bs-parent="#accordionHardwired">
-                              <div class="accordion-body album__cancion__letra">
-                                   <pre>
+                         <div class="accordion-item album__cancion">
+                              <h2 class="accordion-header" id="headingFive">
+                              <button class="accordion-button album__cancion__titulo collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                   Dream No More
+                              </button>
+                              </h2>
+                              <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionHardwired">
+                                   <div class="accordion-body album__cancion__letra">
+                                        <pre>
 He sleeps under black seas waiting
 Lies dreaming in death
 He sleeps under cosmos shaking
@@ -462,19 +465,19 @@ Cthulhu, awaken
 (Wake) Dreaming no more
 Cthulhu, awaken
 (Wake) Dreaming no more
-                                   </pre>
+                                        </pre>
+                                   </div>
                               </div>
                          </div>
-                    </div>
-                    <div class="accordion-item album__cancion cancionHardwired06">
-                         <h2 class="accordion-header" id="headingHardwired06">
-                         <button class="accordion-button album__cancion__titulo collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseHardwired06" aria-expanded="false" aria-controls="collapseHardwired06">
-                              Halo On Fire
-                         </button>
-                         </h2>
-                         <div id="collapseHardwired06" class="accordion-collapse collapse" aria-labelledby="headingHardwired06" data-bs-parent="#accordionHardwired">
-                              <div class="accordion-body album__cancion__letra">
-                                   <pre>
+                         <div class="accordion-item album__cancion">
+                              <h2 class="accordion-header" id="headingSix">
+                              <button class="accordion-button album__cancion__titulo collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                   Halo On Fire
+                              </button>
+                              </h2>
+                              <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionHardwired">
+                                   <div class="accordion-body album__cancion__letra">
+                                        <pre>
 Obey
 Obey
 Come won’t you stay
@@ -543,19 +546,19 @@ Hello darkness
 Say goodbye
 Hello darkness
 Say goodbye
-                                   </pre>
+                                        </pre>
+                                   </div>
                               </div>
                          </div>
-                    </div>
-                    <div class="accordion-item album__cancion cancionHardwired07">
-                         <h2 class="accordion-header" id="headingHardwired07">
-                         <button class="accordion-button album__cancion__titulo collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseHardwired07" aria-expanded="false" aria-controls="collapseHardwired07">
-                              Confusion
-                         </button>
-                         </h2>
-                         <div id="collapseHardwired07" class="accordion-collapse collapse" aria-labelledby="headingHardwired07" data-bs-parent="#accordionHardwired">
-                              <div class="accordion-body album__cancion__letra">
-                                   <pre>
+                         <div class="accordion-item album__cancion">
+                              <h2 class="accordion-header" id="headingSeven">
+                              <button class="accordion-button album__cancion__titulo collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                                   Confusion
+                              </button>
+                              </h2>
+                              <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#accordionHardwired">
+                                   <div class="accordion-body album__cancion__letra">
+                                        <pre>
 Wake to face the day
 Grab this life and walk away
 War is never done
@@ -600,19 +603,19 @@ Crossfire ricochets inside me
 Trapped in a memory forever
 My Life…
 The war that never ends
-                                   </pre>
+                                        </pre>
+                                   </div>
                               </div>
                          </div>
-                    </div>
-                    <div class="accordion-item album__cancion cancionHardwired08">
-                         <h2 class="accordion-header" id="headingHardwired08">
-                         <button class="accordion-button album__cancion__titulo collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseHardwired08" aria-expanded="false" aria-controls="collapseHardwired08">
-                              ManUNkind
-                         </button>
-                         </h2>
-                         <div id="collapseHardwired08" class="accordion-collapse collapse" aria-labelledby="headingHardwired08" data-bs-parent="#accordionHardwired">
-                              <div class="accordion-body album__cancion__letra">
-                                   <pre>
+                         <div class="accordion-item album__cancion">
+                              <h2 class="accordion-header" id="headingEight">
+                              <button class="accordion-button album__cancion__titulo collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                                   ManUNkind
+                              </button>
+                              </h2>
+                              <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight" data-bs-parent="#accordionHardwired">
+                                   <div class="accordion-body album__cancion__letra">
+                                        <pre>
 Chaos,
 Awaiting for Adams return
 Madness,
@@ -677,19 +680,19 @@ Faith in man(un)kind
 Oh, Faith in man(un)kind
 Faith in man(un)kind
 Oh, Faith in man(un)kind
-                                   </pre>
+                                        </pre>
+                                   </div>
                               </div>
                          </div>
-                    </div>
-                    <div class="accordion-item album__cancion cancionHardwired09">
-                         <h2 class="accordion-header" id="headingHardwired09">
-                         <button class="accordion-button album__cancion__titulo collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseHardwired09" aria-expanded="false" aria-controls="collapseHardwired09">
-                              Here Comes Revenge
-                         </button>
-                         </h2>
-                         <div id="collapseHardwired09" class="accordion-collapse collapse" aria-labelledby="headingHardwired09" data-bs-parent="#accordionHardwired">
-                              <div class="accordion-body album__cancion__letra">
-                                   <pre>
+                         <div class="accordion-item album__cancion">
+                              <h2 class="accordion-header" id="headingNine">
+                              <button class="accordion-button album__cancion__titulo collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                                   Here Comes Revenge
+                              </button>
+                              </h2>
+                              <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingNine" data-bs-parent="#accordionHardwired">
+                                   <div class="accordion-body album__cancion__letra">
+                                        <pre>
 Little grave I’m grieving, I will mend you
 Sweet revenge I’m dreaming, I will end you
 
@@ -745,19 +748,19 @@ Revenge
 You ask forgiveness, I give you sweet revenge
 
 Sweet revenge
-                                   </pre>
+                                        </pre>
+                                   </div>
                               </div>
                          </div>
-                    </div>
-                    <div class="accordion-item album__cancion cancionHardwired10">
-                         <h2 class="accordion-header" id="headingHardwired10">
-                         <button class="accordion-button album__cancion__titulo collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseHardwired10" aria-expanded="false" aria-controls="collapseHardwired10">
-                              Am I Savage?
-                         </button>
-                         </h2>
-                         <div id="collapseHardwired10" class="accordion-collapse collapse" aria-labelledby="headingHardwired10" data-bs-parent="#accordionHardwired">
-                              <div class="accordion-body album__cancion__letra">
-                                   <pre>
+                         <div class="accordion-item album__cancion">
+                              <h2 class="accordion-header" id="headingTen">
+                              <button class="accordion-button album__cancion__titulo collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+                                   Am I Savage?
+                              </button>
+                              </h2>
+                              <div id="collapseTen" class="accordion-collapse collapse" aria-labelledby="headingTen" data-bs-parent="#accordionHardwired">
+                                   <div class="accordion-body album__cancion__letra">
+                                        <pre>
 Ooooh,
 Run away, the past will bite again
 Ooooh,
@@ -823,19 +826,19 @@ Anymore
 
 Anymore, ha ha ha
 Am I savage?
-                                   </pre>
+                                        </pre>
+                                   </div>
                               </div>
                          </div>
-                    </div>
-                    <div class="accordion-item album__cancion cancionHardwired11">
-                         <h2 class="accordion-header" id="headingHardwired11">
-                         <button class="accordion-button album__cancion__titulo collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseHardwired11" aria-expanded="false" aria-controls="collapseHardwired11">
-                              Murder One
-                         </button>
-                         </h2>
-                         <div id="collapseHardwired11" class="accordion-collapse collapse" aria-labelledby="headingHardwired11" data-bs-parent="#accordionHardwired">
-                              <div class="accordion-body album__cancion__letra">
-                                   <pre>
+                         <div class="accordion-item album__cancion">
+                              <h2 class="accordion-header" id="headingEleven">
+                              <button class="accordion-button album__cancion__titulo collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEleven" aria-expanded="false" aria-controls="collapseEleven">
+                                   Murder One
+                              </button>
+                              </h2>
+                              <div id="collapseEleven" class="accordion-collapse collapse" aria-labelledby="headingEleven" data-bs-parent="#accordionHardwired">
+                                   <div class="accordion-body album__cancion__letra">
+                                        <pre>
 One crown
 Shines on through the sound
 One crown
@@ -894,19 +897,19 @@ No excuse
 Till the end
 Been living to win
 Been living to win
-                                   </pre>
+                                        </pre>
+                                   </div>
                               </div>
                          </div>
-                    </div>
-                    <div class="accordion-item album__cancion cancionHardwired12">
-                         <h2 class="accordion-header" id="headingHardwired12">
-                         <button class="accordion-button album__cancion__titulo collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseHardwired12" aria-expanded="false" aria-controls="collapseHardwired12">
-                              Spit Out The Bone
-                         </button>
-                         </h2>
-                         <div id="collapseHardwired12" class="accordion-collapse collapse" aria-labelledby="headingHardwired12" data-bs-parent="#accordionHardwired">
-                              <div class="accordion-body album__cancion__letra">
-                                   <pre class="Hardwired12">
+                         <div class="accordion-item album__cancion">
+                              <h2 class="accordion-header" id="headingTwelve">
+                              <button class="accordion-button album__cancion__titulo collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwelve" aria-expanded="false" aria-controls="collapseTwelve">
+                                   Spit Out The Bone
+                              </button>
+                              </h2>
+                              <div id="collapseTwelve" class="accordion-collapse collapse" aria-labelledby="headingTwelve" data-bs-parent="#accordionHardwired">
+                                   <div class="accordion-body album__cancion__letra">
+                                        <pre>
 Come unto me and you will feel perfection
 Come unto me and dedicate
 Come unto me, you’ll never feel rejection
@@ -957,12 +960,12 @@ Long live machine
 Our future supreme
 Your man overthrown
 Spit out the bone, yeah
-                                   </pre>
+                                        </pre>
+                                   </div>
                               </div>
                          </div>
                     </div>
-               </div>
-               <!-- fin accordionHardwired -->
+                    <!-- fin accordion -->
                <!-- <div class="col-12 col-md-8 col-lg-9 albumListaCanciones">
                     <ul>
                          <li class="list-group-item">Disco 1</li>
@@ -983,7 +986,7 @@ Spit out the bone, yeah
                </div> -->
                <section class="col-10 offset-1 menu__volver">
                     <hr>
-                    <a class="nav-link menu__volver__link" href="../music.html">VOLVER A MUSICA</a>
+                    <a class="nav-link menu__paginas__link" href="../music.html">VOLVER A MUSICA</a>
                </section>
           </section>
      </main>

@@ -148,7 +148,7 @@
                width: 20vw;
           }
           &__tapa {
-               width: 20vw;
+               width: 15vw;
                margin: auto;
           }
      }
@@ -160,7 +160,7 @@
      .catalogo {
           // background-color: rgb(0, 0, 255);
           display: grid;
-          grid-template-columns: repeat(3, 33%);
+          grid-template-columns: repeat(3, 31%);
           grid-template-rows: repeat(4, auto);
           gap: 3vw 3vw;
           grid-template-areas: 
@@ -177,7 +177,7 @@
      .catalogo {
           // background-color: rgb(0, 100, 0);
           display: grid;
-          grid-template-columns: repeat(4, 25%);
+          grid-template-columns: repeat(4, 22%);
           grid-template-rows: repeat(3, auto);
           gap: 3vw 3vw;
           grid-template-areas: 

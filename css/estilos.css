@@ -10,11 +10,12 @@
 
 .catalogo {
   display: grid;
-  grid-template-columns: repeat(2, 50%);
+  grid-template-columns: repeat(2, 48%);
   grid-template-rows: repeat(6, auto);
   column-gap: 2vw;
   row-gap: 2vw;
   justify-content: center;
+  padding: 1rem;
   grid-template-areas: "producto1 producto2" "producto3 producto4" "producto5 producto6" "producto7 producto8" "producto9 producto10" "producto11 producto12"; }
   .catalogo .producto__killLentes {
     grid-area: producto1; }
@@ -48,6 +49,7 @@
   column-gap: 3vw;
   row-gap: 3vw;
   justify-content: center;
+  padding: 1rem;
   grid-template-areas: "album1" "album2" "album3" "album4" "album5" "album6" "album7" "album8" "album9" "album10"; }
   .galeria .album__Kill {
     grid-area: album1; }
@@ -77,6 +79,7 @@
   column-gap: 0vw;
   row-gap: 2vw;
   justify-content: center;
+  padding: 1rem;
   grid-template-areas: "mes01" "mes02" "mes03"; }
   .tour .tour__mes__01 {
     grid-area: mes01; }
@@ -118,7 +121,7 @@ body {
     body a:hover {
       color: white; }
   body .container {
-    margin: 2rem auto; }
+    margin-top: 4rem; }
     body .container .container__titulo {
       margin-top: 2rem;
       margin-bottom: 2rem;
@@ -132,19 +135,6 @@ body {
     background-color: turquoise; }
   body .div__ejemplo__canciones {
     background-color: violet; }
-
-.volver {
-  text-align: center; }
-  .volver__boton {
-    font-size: 1.3rem;
-    font-weight: 400;
-    color: #c80000;
-    transition: all .5s ease; }
-    .volver__boton:hover {
-      color: white;
-      transform: translateY(5px); }
-    .volver__boton:focus {
-      color: #c80000; }
 
 .error404__titulo {
   position: relative;
@@ -206,6 +196,18 @@ body {
       transform: translateY(5px); }
     .menu__redes__link:visited {
       color: #c80000; }
+  .menu__volver {
+    text-align: center; }
+    .menu__volver__link {
+      font-size: 1.3rem;
+      font-weight: 600;
+      color: #c80000;
+      transition: all .5s ease; }
+      .menu__volver__link:hover {
+        color: white;
+        transform: translateY(5px); }
+      .menu__volver__link:focus {
+        color: #c80000; }
 
 .compra {
   margin-top: 4rem;
@@ -386,6 +388,7 @@ body {
     column-gap: 3vw;
     row-gap: 3vw;
     justify-content: center;
+    padding: 1rem;
     grid-template-areas: "album1 album2" "album3 album4" "album5 album6" "album7 album8" "album9 album10"; } }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -396,6 +399,7 @@ body {
     column-gap: 3vw;
     row-gap: 3vw;
     justify-content: center;
+    padding: 1rem;
     grid-template-areas: "album1 album2  album3" "album4 album5  album6" "album7 album8  album9" ".      album10 ."; } }
 
 @media only screen and (min-width: 1200px) {
@@ -406,6 +410,7 @@ body {
     column-gap: 3vw;
     row-gap: 3vw;
     justify-content: center;
+    padding: 1rem;
     grid-template-areas: "album1  album2  album3  album4" "album5  album6  album7  album8" ".       album9  album10 ."; } }
 
 @media only screen and (min-width: 576px) and (max-width: 767px) {
@@ -440,13 +445,13 @@ body {
   .album__imagen {
     width: 20vw; }
   .album__tapa {
-    width: 20vw;
+    width: 15vw;
     margin: auto; } }
 
 @media only screen and (min-width: 768px) and (max-width: 1199px) {
   .catalogo {
     display: grid;
-    grid-template-columns: repeat(3, 33%);
+    grid-template-columns: repeat(3, 31%);
     grid-template-rows: repeat(4, auto);
     gap: 3vw 3vw;
     grid-template-areas: "producto1 producto2  producto3" "producto4 producto5  producto6" "producto7 producto8  producto9" "producto10 producto11 producto12"; } }
@@ -454,7 +459,7 @@ body {
 @media only screen and (min-width: 1200px) {
   .catalogo {
     display: grid;
-    grid-template-columns: repeat(4, 25%);
+    grid-template-columns: repeat(4, 22%);
     grid-template-rows: repeat(3, auto);
     gap: 3vw 3vw;
     grid-template-areas: "producto1  producto2  producto3  producto4" "producto5  producto6  producto7  producto8" "producto9  producto10 producto11 producto12"; } }

@@ -1,16 +1,19 @@
-.volver {
-     text-align: center;
-     &__boton {
-          font-size: $fuente-tamano * 1.3;
-          font-weight: 400;
-          color: $color-link;
-          transition: all .5s ease;
-          &:hover {
-               color: $color-texto;
-               transform: translateY(5px); //scale(1.1);
-          }
-          &:focus {
-               color: $color-link;
-          }          
-     }
-}
+// .volver {
+//      text-align: center;
+//      &__boton {
+//           font-size: $fuente-tamano * 1.2;
+//           font-weight: 600;
+//           color: $color-link;
+//           // transition: all .5s ease;
+//           // &:hover {
+//           //      color: $color-texto;
+//           //      transform: translateY(5px);
+//           // }
+//           &:focus {
+//                color: $color-link;
+//           }     
+//           &:visited {
+//                color: $color-link;
+//           }     
+//      }
+// }

@@ -1,7 +1,7 @@
 
 //TIENDA
 .catalogo {
-     @include grillas__simetricas(2, 50%, 6, auto, 2vw, 2vw);
+     @include grillas__simetricas(2, 48%, 6, auto, 2vw, 2vw);
      grid-template-areas: 
      "producto1 producto2"
      "producto3 producto4"

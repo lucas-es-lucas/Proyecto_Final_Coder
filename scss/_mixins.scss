@@ -10,6 +10,7 @@
      column-gap: $column-gap;
      row-gap: $row-gap;
      justify-content: center;
+     padding: 1rem;
 }
 
 @mixin opacidad($cantidad) {
