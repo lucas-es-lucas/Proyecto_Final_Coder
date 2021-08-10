@@ -1,5 +1,37 @@
 
 //PORTADA 
+     // index
+     // &__portada {
+     //      margin: 1rem 1rem;
+     // }
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+
+     .album {
+          &__portada {
+               margin: 1rem;
+          }
+     }
+
+     // .portada__section {
+     //      // background-color: aqua;
+     //      padding: 1rem;
+     //      display: flex;
+     //      flex-direction: row;
+     //      flex-wrap: wrap;
+     //      align-items: center;
+     // }
+     // .portada__info {
+     //      padding: 1.5rem;
+     //      &__titulo {
+     //           font-size: ($fuente-tamano * 1.5);
+     //      }
+     //      &__subtitulo {
+     //           font-size: ($fuente-tamano * 1.2);
+     //      }
+     // }
+
+}
+
 @media only screen and (min-width: 768px) and (max-width: 1199px) {
 
      .portada__section {
@@ -44,7 +76,7 @@
 
 }
 
-//MUSICA 
+//ALBUMS 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
 
      .galeria {
@@ -87,19 +119,26 @@
 
 }
 
-//CANCIONES
+//CANCIONES / IMAGENES: TAPAS-PORTADAS-COVERS
 @media only screen and (min-width: 576px) and (max-width: 767px) {
 
      .album {
+          &__portada {
+               margin: 1rem;
+          }
           &__imagen {
                width: 40vw;
           }
      }
+
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
 
      .album {
+          &__portada {
+               margin: 1rem;
+          }
           &__imagen {
                width: 30vw;
           }
@@ -113,11 +152,15 @@
                }
           }
      }
+
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
 
      .album {
+          &__portada {
+               margin: 1rem;
+          }
           &__imagen {
                width: 25vw;
           }
@@ -126,11 +169,15 @@
                margin: auto;
           }
      }
+
 }
 
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
 
      .album {
+          &__portada {
+               margin: 1rem;
+          }
           &__imagen {
                width: 20vw;
           }
@@ -139,11 +186,15 @@
                margin: auto;
           }
      }
+
 }
 
 @media only screen and (min-width: 1400px) {
 
      .album {
+          &__portada {
+               margin: 1rem;
+          }
           &__imagen {
                width: 20vw;
           }
@@ -152,6 +203,7 @@
                margin: auto;
           }
      }
+
 }
 
 //TIENDA 
@@ -326,4 +378,5 @@
                }
           }
      }
+
 }
