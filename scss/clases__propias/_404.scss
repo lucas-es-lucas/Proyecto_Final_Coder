@@ -2,8 +2,12 @@
      &__titulo {
           position: relative;
           top: 25vh;
+          background-color: rgb(200, 0, 0); 
+          color: $color-fondo;
+          font-family: 'Tourney', cursive;
+          font-style: oblique;
+          font-size: 2rem;
           text-align: center;
-          color: $color-link;
      }
      &__mensaje {
           position: relative;
@@ -14,10 +18,10 @@
      &__link {
           position: relative;
           top: 35vh;
-          transition: all 2s ease;
+          transition: all 1s ease;
           :hover {
                color: $color-texto;
-               transform: scale(1.2, 1.2);
+               transform: translateY(-5px);
           }
           h2 {
                text-align: center;

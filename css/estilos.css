@@ -139,8 +139,12 @@ body {
 .error404__titulo {
   position: relative;
   top: 25vh;
-  text-align: center;
-  color: #c80000; }
+  background-color: #c80000;
+  color: black;
+  font-family: 'Tourney', cursive;
+  font-style: oblique;
+  font-size: 2rem;
+  text-align: center; }
 
 .error404__mensaje {
   position: relative;
@@ -151,10 +155,10 @@ body {
 .error404__link {
   position: relative;
   top: 35vh;
-  transition: all 2s ease; }
+  transition: all 1s ease; }
   .error404__link :hover {
     color: white;
-    transform: scale(1.2, 1.2); }
+    transform: translateY(-5px); }
   .error404__link h2 {
     text-align: center;
     color: #c80000; }
